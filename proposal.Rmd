@@ -1,0 +1,75 @@
+##### Group 311A Proposal
+
+ - Group Members
+Hayden Dippel, Evan Krook, Jake Havertape, Linlin Zhang, and Yuhan Zhang
+
+### Communication Plan
+
+> The main source of communication for our group will be an Imessage group chat to discuss the project while apart, and use google documents in order to contribute together.  On the other hand, we have decided to meet up every Tuesday between 3-4 at Union South to work on the project. 
+
+### Question of Interests
+
+> The topic we decided as a group was Meteorite Landings throughout the World in the 1800s - 2000s.
+> Research Question: 
+
+- How many meteorites fall each year？
+- Which type of meteorite is the most numerous?
+- Whether a meteorite was found depends on the year？
+- Is there a clear relationship between the mass of a meteorite and whether it is found?
+- Is the classification of meteorites related to mass?
+Where are the most meteorites found? World Map
+
+### Data Source
+
+- Meteorite Landings: https://catalog.data.gov/dataset/meteorite-landings
+
+
+### Data Description
+
+> Who Collected Data: The Meteoritical Society (publisher/maintainer: nasa.data.gov)
+
+> How Data Was Collected: The meteorite data is sourced from NASA by the Meteoritical Society, and NASA obtains this data using seismic data to locate meteorites. NASA classifies a meteorite as “Fireballs that penetrate deeply enough into the atmosphere to generate sonic booms.” (Link: https://ares.jsc.nasa.gov/meteorite-falls/how-to-find-meteorites/)
+
+> Key Variables:  
+
+- Name: The name given to the meteorite 
+- ID: The unique identifier of each meteorite
+- Nametype: The type of name of the meteorite. 
+- Recclass: Classification of meteorites. We need to count the number of meteorites of each classification. That will answer question 2. Moreover, this variable may relate to other variables such as mass, Reclat, and Reclong, so it may answer question 5.
+- Mass (g): The mass of the meteorite in grams. This variable may relate to Fall low-mass meteorites that may be harder to find and may answer question 4. 
+- Fall: Whether the meteorite is found
+- Year: The year the meteorite was recorded landing by NASA. This variable is important because it relates to question 1 tightly and we need this variable to get the number of meteorites each year.
+- Reclat: Latitude of the meteorite's landing site
+- Reclong: Longitude of the meteorite's landing site
+- GeoLocation: The combination of the latitude and the longitude of the metrorites’s landing site. These variables about locations are significant because we need to find which counties or regions have more fallen meteorites and it will answer question 6.
+ 
+> If the data may be thought of as a sample from some larger population, what is that larger population?                            
+
+Our data only includes all known or observed meteorites, and this does not include meteorites that have not been observed and have fallen to Earth. When technology is not developed, the number of unobserved meteorites may be very large.
+
+### Graph: 
+
+##### Scatter plots: 
+
+- The comparison between the classification of meteorites related to their mass. (variables: Recclass & Mass)
+- The distribution of the location of the meteorite on the earth (variables: Reclat vs Reclong).
+
+##### Bar plots: 
+
+ - Frequency of meteorites falls each year. (variable: Name, Year)
+Median and Mean Mass of different types of meteorites. (variable: Mass, Nametype)
+ - The most common classes of meteorites. (variable: recclass)
+
+##### Histograms:
+
+ - Possibility of meteorites fall and found. (variables: Name, Mass, Fall, Year)
+
+##### Map:
+ 
+- The combination of the latitude and the longitude of the metrorites’s landing site with their mass (variable: Reclat, Reclong, Mass, Year)
+
+
+
+### Methods:
+Hypothesis test and Linear model for assumption (Scatter plots)
+T test on assumption (Bar plots)
